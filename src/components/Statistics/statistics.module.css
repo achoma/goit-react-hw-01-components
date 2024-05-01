@@ -10,7 +10,7 @@
   margin-bottom: 50px;
 }
 
-.titleStats {
+.title-stats {
   font-size: 34px;
   color: whitesmoke;
   background: linear-gradient(
@@ -26,8 +26,8 @@
   margin: 0;
 }
 
-.statList {
-  color: red;
+.stat-list {
+  color: #000;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-.itemStats {
+.item-stats {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,12 +44,12 @@
   width: 100%;
 }
 
-.labelStats {
+.label-stats {
   font-size: 20px;
   font-weight: 500;
 }
 
-.percentageStats {
+.percentage-stats {
   font-weight: 700;
   font-size: 28px;
 }

@@ -7,17 +7,19 @@ const Statistics = ({ title, stats }) => {
   };
 
   return (
-    <section className={styles.statistics}>
-      {title && <h2 className={styles.titleStats}>{title}</h2>}
-      <ul className={styles.statList}>
+    <section className={styles['statistics']}>
+      {title && <h2 className={styles['title-stats']}>{title}</h2>}
+      <ul className={styles['stat-list']}>
         {stats.map(stat => (
           <li
             key={stat.id}
-            className={styles.itemStats}
+            className={styles['item-stats']}
             style={{ backgroundColor: generateRandomColor() }}
           >
-            <span className={styles.labelStats}>{stat.label}</span>
-            <span className={styles.percentageStats}>{stat.percentage}%</span>
+            <span className={styles['label-stats']}>{stat.label}</span>
+            <span className={styles['percentage-stats']}>
+              {stat.percentage}%
+            </span>
           </li>
         ))}
       </ul>
